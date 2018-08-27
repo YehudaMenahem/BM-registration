@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+    <title>Buyme</title>
+    <link rel="icon" type="image/png" href="assets/images/buyme_logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+</head>
+
+<body class="signup-page">
+
+    <!-- header -->  
+    <div class="header">
+        <a href="https://buyme.co.il/" tabindex="1">
+            <img src="assets/images/site-logo--colored.png" alt="buy me logo" class="header__logo">
+        </a>
+    </div>
+
+    <!-- form wrapper -->
+    <div class="form-wrapper">
+        <div class="form-wrapper__header">
+            <h1 class="form-wrapper__header__title">הרשמה לאתר</h1>
+        </div>
+
+        <!-- form -->
+        <form class="form">
+            <div class="form__field form__field--name">
+                <label for="name" class="form__field__label">שם פרטי</label>
+                <input type="text" name="name" id="name" class="form__field__input" tabindex="2">
+            </div>
+            <div class="form__field form__field--lastname">
+                <label for="lastname" class="form__field__label">שם משפחה</label>
+                <input type="text" name="lastname" id="lastname" class="form__field__input" tabindex="3">
+            </div>
+            <div class="form__field">
+                <label for="email" class="form__field__label">כתובת אימייל</label>
+                <input type="email" name="email" id="email" placeholder="user@name.com" class="form__field__input" tabindex="4">
+            </div>
+            <div class="form__field">
+                <label for="password" class="form__field__label">סיסמה</label>
+                <input type="password" name="password" id="password" class="form__field__input" tabindex="5">
+            </div> 
+            <div class="form__field form__field--button">
+                <label for="button"></label>
+                <input type="submit" name="submit" id="button" value="הרשמה" class="form__field__input" tabindex="6">
+            </div>
+            <div class="form__field form__field--checkbox checkbox">
+                <label for="license-agreement" class="form__field__label" >
+                    <input type="checkbox" name="license-agreement" id="license-agreement" checked="checked" class="checkbox__input" >
+                    אני מאשר ומסכים <a href="https://buyme.co.il/page/%D7%AA%D7%A7%D7%A0%D7%95%D7%9F%20%D7%94%D7%90%D7%AA%D7%A8" tabindex="8">לתנאי השימוש והתקנון</a>
+                    <span class="checkbox__checkmark" tabindex="7"></span>
+                </label>
+            </div>       
+        </form>
+    </div>
+
+</body>
+
+</html>

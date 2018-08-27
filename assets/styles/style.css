@@ -1,0 +1,288 @@
+/* ======== 
+Page Styles
+=========== */   
+
+/********/
+/* General */
+/********/ 
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    direction: rtl
+}
+
+h1,h2,h3,h4,h5,h6,p,span,label,input{
+    font-family: "open_sans_hebrew";
+    font-weight: 300;
+    color: #505050;
+}
+
+input{
+    outline: none;
+    transition: border .5s;
+    text-indent: 15px;
+}
+
+::placeholder { 
+    opacity: 0.4; 
+}
+
+:-ms-input-placeholder { 
+    opacity: 0.4; 
+}
+
+::-ms-input-placeholder { 
+    opacity: 0.4; 
+}
+
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus {
+    border: 1px solid #fab442;
+}
+
+input[type=submit]:focus,
+input[type=checkbox]:focus{
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+a:focus{
+    outline: #fab442 auto 5px;
+}
+
+
+/********/
+/* Body */
+/********/
+
+.signup-page{
+    background-color: #fafafa
+}
+
+/********/
+/* Header */
+/********/
+
+.header{
+    height: 130px;
+    background:
+      radial-gradient(
+        90px 65px at 35px top,
+        #17a8bb,
+        #14829f
+      );
+}
+
+.header__logo{
+    display: block;
+    position: relative;
+    top: 15px;
+    width: 65px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+/********/
+/* Form */
+/********/
+
+.form-wrapper{
+    position: relative;
+    top: -40px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 4px 30px 0px rgba(161,158,161,0.3);
+    -moz-box-shadow: 0px 4px 30px 0px rgba(161,158,161,0.3);
+    box-shadow: 0px 4px 30px 0px rgba(161,158,161,0.3);
+}
+
+.form-wrapper__header{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.form-wrapper__header__title{
+    margin: 0;
+    font-size: 18px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px 20px 20px;
+}
+
+
+.form__field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__field__label{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.form__field__input{
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form__field.form__field--button{
+}
+
+.form__field.form__field--button .form__field__input{
+    background-color: #fab442;
+    border: none;
+    cursor: pointer;
+}
+
+.form__field.form__field--checkbox{
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    
+}
+
+.form__field.form__field--checkbox .form__field__label{
+    position: relative;
+}
+
+.form__field.form__field--checkbox .form__field__label input:checked ~ .checkbox__checkmark {
+    background-color: #fab442;
+}
+
+.form__field.form__field--checkbox input:checked ~ .checkbox__checkmark:after {
+    display: block;
+}
+
+.checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form__field--checkbox .checkbox__input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form__field--checkbox .checkbox__checkmark {
+    position: absolute;
+    top: 0;
+    right: -22px;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #fab442;
+    border-radius: 3px;
+}
+
+.form__field--checkbox .checkbox__checkmark:after {
+    left: 4px;
+    top: 0;
+    width: 2px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form__field--checkbox .form__field__input + label{
+
+}
+
+.form__field--checkbox .form__field__input:checked + label:after {
+
+}
+
+.form__field--checkbox .form__field__label{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.form__field--checkbox .form__field__label a{
+    color: #505050;
+    -webkit-text-underline-position: under;
+    -ms-text-underline-position: below;
+    text-underline-position: under;
+}
+
+
+/******************/
+/* Desktop Statae */
+/******************/
+
+@media screen and (min-width:480px){
+    /********/
+    /* General */
+    /********/ 
+
+    /********/
+    /* Body */
+    /********/
+
+    /********/
+    /* Header */
+    /********/
+
+    .header{
+        height: 200px;
+        background:
+        radial-gradient(
+            200px 200px at 35% top,
+            #1cbfd8,
+            #14829f
+        );
+    }    
+
+
+    .header__logo{
+        top: 45px;
+        width: 85px;
+        height: 78px;
+    }
+
+    /********/
+    /* Form */
+    /********/    
+
+    .form-wrapper{
+        max-width: 385px;
+    }
+
+    .form{
+        display: inline-block;
+        width: 100%;
+        padding: 25px 40px 45px 40px;
+    }
+
+    .form__field--name,
+    .form__field--lastname{
+        display: inline-flex;
+        width: 140px;
+    }
+
+    .form__field--lastname{
+        margin-right: 20px;
+    }
+
+}

@@ -5,7 +5,7 @@ Form test page
 The technologies being used: HTML, Css, Gulp
 
 ## Installation / Usage
-Please download the project 
+Please clone/download the project 
 and run `gulp` for a open the project in local server
 Navigate to `http://localhost:3000/`
 

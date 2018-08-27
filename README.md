@@ -1,5 +1,5 @@
-# Buyme Registration
-Form page 
+# BM Register
+Form test page 
 
 # Languages
 The technologies being used: HTML, Css, Gulp

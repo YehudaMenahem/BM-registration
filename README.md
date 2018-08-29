@@ -1,5 +1,5 @@
 # BM Register
-Form test page 
+Sign-up page
 
 # Languages
 The technologies being used: HTML, Css, Gulp
